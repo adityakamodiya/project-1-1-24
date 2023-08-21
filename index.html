@@ -11,7 +11,8 @@
 <body>
     <div id="wrapper">
         <div class="header">
-            <h1>Our logo</h1>
+            <img src="logo.webp" alt="">
+            <!-- <h1>Our logo</h1> -->
             <ul>
                 <li><a href="">About us</a></li>
                 <li><a href="">sign up</a></li>
@@ -19,22 +20,52 @@
         </div>
         <section>
             <div class="box">
-                <div class="box-h1">                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, vero?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime blanditiis saepe nobis! Atque libero accusamus repellendus alias nostrum, 
-                </h1></div>
+                <div class="box-h1">
+                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, vero?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime blanditiis saepe nobis! Atque
+                        libero accusamus repellendus alias nostrum,
+                    </h1>
+                </div>
 
                 <h3>Lorem ipsum dolor, sit amet consectetur adipisicing.</h3>
-                <div class="button1"><button><a href="">Tasks</a></button></div>
+                <div class="button1"><button>Tasks</button></div>
                 <div class="button2"><a href="">visions <span>and</span> missions</a></div>
             </div>
         </section>
+        <div class="vision-mission">
+            <h4>vission and missions</h4>
+            <ul>
+                <h5>our missions and future goals ...</h5>
+                <!-- <li><h5>Lorem ipsum dolor sit amet.</h5></li> -->
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            </ul>
+        </div>
+        <div class="tasks">
+            <h1>welcome to our  site ...</h1>
+        </div>
 
     </div>
     <script>
+        let array = [
+            'dummyimg.png','cockroaches.webp',
+        ]
         let sec = document.querySelector('section')
-        window.onload =()=>{
-            sec.style.display = 'block'
-        }
+    //    let array = ['dummyimg.png','cockroaches.webp',]
+            sec.style.backgroundImage = "url('cockroaches.webp')"
+            let task = document.querySelector('.button1')
+            let vision_mission =document.querySelector('.vision-mission')
+            let task_page =document.querySelector('.tasks')
+            task.onclick=(e)=>{
+                e.preventDefault()
+                console.log('hello')
+                sec.style.display = 'none'
+                vision_mission.style.display = 'none'
+                task_page.style.display = 'block'
+            }
     </script>
 </body>
 
