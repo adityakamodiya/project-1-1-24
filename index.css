@@ -125,6 +125,12 @@ section {
 
 .tasks{
     display: none;
+    /* align-items: center; */
+    text-align: center;
+}
+.play , .pause{
+    
+    padding: 10px 15px;
 }
 
 
